@@ -4,7 +4,8 @@ import os
 from datetime import datetime
 
 # ================= CONFIGURAÇÃO =================
-TOKEN = "8248823430:AAHCr05v9lulJbf_GKYGCtXeeC-I-5L9-Zs"
+import os
+TOKEN = os.getenv("TOKEN")
 bot = telebot.TeleBot(TOKEN)
 ARQUIVO = "gastos.json"
 
